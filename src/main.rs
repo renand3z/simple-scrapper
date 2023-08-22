@@ -1,6 +1,6 @@
 #[tokio::main]
 async fn main() {
-    let resp = reqwest::get("https://wwwg.example.com").await.unwrap();
+    let resp = reqwest::get("https://www.example.com").await.unwrap();
     assert!(resp.status().is_success());
 
     let body = resp.text().await.unwrap();
